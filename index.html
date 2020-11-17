@@ -1,26 +1,169 @@
-<!-- boilerplae wasm -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pondron</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        .columns {
+            min-height: 98vh;
+            margin: 0px;
+            padding: 0px;
+        }
 
-<html>  
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        .sidey {
+            border-right: 1px solid lightgrey;
+        }
 
-    </head>
-    <body>
-      <div class="container h-100">
-        <div class="row">
-          <div class="jumbotron border" style="background-color:transparent !important;margin-top: 10em;">
-            <img src="pondronLogo.png" alt="logo">
-            <h1 class="display-6">uh oh...</h1>
-            <hr class="my-4">
-            <img src="https://nypost.com/wp-content/uploads/sites/2/2020/01/nicolas-cage-national-treasure.jpg?quality=80&strip=all&w=978" alt="Steal the website">
-
-          </div>
+        .footy {
+            height: 2vh;
+            margin: 0px;
+            color: white;
+            background: #484848;
+            font-size: 14px;
+            font-weight: lighter;
+            padding: 3px;
+        }
+        .menu-list, .siri {
+            font-size: 14px;
+        }
+        .main {
+            background-color: #F8F8F8;
+        }
+        hr {
+            margin: 0px;
+        }
+        .user {
+            vertical-align: bottom;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/8eb44e851e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="columns is-fullheight">
+        <div class="column is-2 sidey">
+            <aside class="menu">
+                <div class="has-text-centered">
+                    <img src="images/pondron6.png">
+                </div>
+                <p class="menu-label">
+                    Navigation
+                </p>
+                <hr>
+                <ul class="menu-list">
+                    <li><a><i class="fas fa-columns"></i> &nbsp;Home</a></li>
+                    <li><a><i class="fas fa-brain"></i> &nbsp;Neural Net</a></li>
+                </ul>
+                <div class="field has-addons">
+                    <div class="control">
+                        <input class="input siri" type="text" placeholder="Find a node">
+                    </div>
+                    <div class="control">
+                        <a class="button is-info siri">
+                        Search
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <p class="menu-label">
+                    Learning Path
+                </p>
+                <hr>
+                <ul class="menu-list">
+                    <li><a>Memory Trace</a></li>
+                    <li>
+                    <a class="is-active">Core Concepts</a>
+                    <ul>
+                        <li><a>Hardware</a></li>
+                        <li><a>Software</a></li>
+                        <li><a>Internet</a></li>
+                    </ul>
+                    </li>
+                    <!-- <li><a>Invitations</a></li>
+                    <li><a>Cloud Storage Environment Settings</a></li>
+                    <li><a>Authentication</a></li> -->
+                </ul>
+                <br>
+                <p class="menu-label">
+                    Overview
+                </p>
+                <hr>
+                <ul class="menu-list">
+                    <li><a>Graphs and The Brain</a></li>
+                    <li><a>Associative Learning</a></li>
+                    <li><a>Spaced Repetition</a></li>
+                </ul>
+            </aside>
         </div>
-      </div>      
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
-</html>  
+        <div class="column main">
+            <!-- <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand"> -->
+                <!-- <a class="navbar-item" href="https://bulma.io">
+                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                </a> -->
+            
+                <!-- <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true">asdf</span>
+                    <span aria-hidden="true">asdfag</span>
+                    <span aria-hidden="true">asgaga</span>
+                </a>
+                </div> -->
+            
+                <!-- <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+          
+            
+                    <a class="navbar-item">
+                    Documentation
+                    </a>
+            
+                    <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+            
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                        About
+                        </a>
+                        <a class="navbar-item">
+                        Jobs
+                        </a>
+                        <a class="navbar-item">
+                        Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                        Report an issue
+                        </a>
+                    </div>
+                    </div>
+                </div> -->
+            
+                <!-- <div class="navbar-end">
+                    <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                        <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                        Log in
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </nav> -->
+        </div>
+    </div>
+    <div class="footy has-text-centered">
+        <p>Pondron &copy; Optimizing Human Understanding</p>
+    </div>
+  </body>
+</html>
