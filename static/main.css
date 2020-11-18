@@ -1,0 +1,43 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+.columns {
+    min-height: 99vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidey {
+    border-right: 1px solid lightgrey;
+}
+
+.footy {
+    /* height: 2vh;
+    margin: 0px; */
+    color: white;
+    background: #484848;
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 3px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;            /* Footer height */
+    
+}
+.menu-list, .siri {
+    font-size: 14px;
+}
+.main {
+    background-color: #F8F8F8;
+}
+hr {
+    margin: 0px;
+}
+.user {
+    vertical-align: bottom;
+}
+
+.hidden {
+    visibility: hidden;
+}
