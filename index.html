@@ -85,8 +85,8 @@
             }
             .burger {
                 visibility: visible;
-                padding-left: 20rem;
-                padding-top: 1rem;
+                position: fixed;
+                top: 50px;
             }
             .mid-pic {
                 padding-top: 2rem;
@@ -105,9 +105,11 @@
             <div class="navbar-brand">
                 <a class="navbar-item nav-logo">
                 </a>
-                <div>
-                    <i class="fas fa-bars burger"></i>
-                </div>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
 
             
