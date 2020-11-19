@@ -1,26 +1,332 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Pondron</title>
-        <link rel="icon" type="image/png" href="static/images/ico.png">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-        <link rel="stylesheet" href="static/fontawesome/css/all.min.css">
-        <link rel="stylesheet" href="static/main.css">
-    </head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pondron</title>
+    <link rel="icon" type="image/png" href="images/network.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        .has-bg-img { 
+            background-image: url(images/cool-background.png) ;
+            background-position: center center;
+            background-repeat:  no-repeat;
+            background-attachment: fixed;
+            background-size:  cover;
+            background-color: #999;
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .nav-logo {
+            background: url(images/PondronMD.png);
+            background-size: cover;
+            width: 150px;
+        }
+        nav {
+            margin-left: 4px;
+        }
+        .top-item {
+            color: white;
+        }
+        .top-item:hover {
+            opacity: 0.5;
+        }
+        .top-hero {
+            margin-top: 50px;
+            margin-bottom: -25px;
+        }
+        .graph {
+            margin-top: 5rem;
+        }
+        #tech {
+            margin-top: -7rem;
+        }
+        .image img {
+            border-radius: 75%
+        }
+        .menu-list {
+            font-size: 14px;
+        }
+        hr {
+            margin: 0px;
+            padding: 0px;
+        }
+        .card {
+            padding-top: 1rem;
+        }
+        #about {
+            margin-top: 5rem;
+            margin-bottom: -4rem;
+        }
+    </style>
+  </head>
+  <body>
+      <section class="hero is-large has-bg-img">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item nav-logo">
+                </a>
+            
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+            </div>
+            
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    
+                    </div>
+                </div>
+            
+                <div class="navbar-end">
+                <a class="navbar-item top-item" href="#overview">
+                    Overview
+                </a>
+            
+                <a class="navbar-item top-item" href="#tech">
+                    Tech
+                </a>
 
-    <body>
-        <div class="columns is-fullheight" id="app">
+                <a class="navbar-item top-item" href="#about">
+                    About Us
+                </a>
+                
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-rounded is-info" href="/login.html">
+                            <strong>Login</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <section class="hero">
+            <div class="hero-body">
+              <div class="container">
+              </div>
+            </div>
+          </section> -->
+        <div class="hero" style="margin-top: 5rem;">
+            <div class="container has-text-centered">
+                <h2 class="title is-2">leveraging the circuitry of the brain <br/>to encode information</h2>
+            </div>
         </div>
-        <div class="footy has-text-centered">
-            <p>Pondron &copy; Optimizing Human Understanding</p>
+        <div class="hero is-halfheight top-hero" id="overview">
+            <div class="hero-head">
+                <div class="container graph">
+                    <div class="columns">
+                        <div class="column is-3 is-offset-1">
+                            <div class="box">
+                                <p class="menu-label">
+                                <i class="fas fa-brain"></i>
+                                Brain
+                                </p>
+                                <hr>
+                                <ul class="menu-list">
+                                    <li><a>A collection of neurons and synapses</a></li>
+                                    <li>
+                                        <a>Interpreter of impulses between neural pathways</a>
+                                        <ul>
+                                        <li><a>Neurons</a></li>
+                                        <li><a>Synapes</a></li>
+                                        <li><a>Pathways</a></li>
+                                        <li><a>Behaviours</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>                       
+                        </div>
+                        <div class="column is-4">
+                            <figure class="image is-4by3">
+                                <img src="images/braingraph.png">
+                            </figure>
+                        </div>
+                        <div class="column is-3">
+                            <div class="box">
+                                <p class="menu-label">
+                                <i class="fas fa-project-diagram"></i>
+                                Graph
+                                </p>
+                                <hr>
+                                <ul class="menu-list">
+                                    <li><a>A collection of nodes and edges</a></li>
+                                    <br>
+                                    <li>
+                                        <a>Interpreter of the intra-nodal relationships</a>
+                                        <ul>
+                                        <li><a>Nodes</a></li>
+                                        <li><a>Edges</a></li>
+                                        <li><a>Relationships</a></li>
+                                        <li><a>Algorithms</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script type="module">
-            import init from './package.js';
-            init('./package_bg.wasm');
-        </script>
-    </body>
+        <div class="hero" id="tech">
+            <div class="hero-body"> 
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-12">
+                    <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child is-warning notification">
+                            <p class="title">The Problem</p>
+                            <p class="subtitle">Linear thinking has lead to linear progress.</p>
+                            <div class="content">
+                                <!-- Content -->
+                                At its core, education is the encoding and storage of information in the brain.
+                                Advances in neurology have decoupled from advances in education, and this fundamental principle has been lost.
+                                Students learn in a linear fashion as the have done for hundreds of year, even as the <a href="https://en.wikipedia.org/wiki/Connectome">Connectome</a>
+                                was mapped revealing the true structure of the brain (hint hint it is not linear).
+                            </div>
+                        </article>
+                        <article class="tile is-child is-info notification">
+                            <p class="title">The Stack</p>
+                            <p class="subtitle">What's new? Why now?</p>
+                            <div class="content">
+                                <!-- Content -->
+                                Get ready for some ol' fashioned developer dogma. We are living in the golden-age of
+                                software development. With the advent of <a href="https://webassembly.org/">WebAssembly</a> we can now compile
+                                memory safe code(see Rust) that executes in the browser, with speed comprable to bare metal.
+                                <ul>
+                                    <li>Rust</li>
+                                    <li>WASM</li>
+                                    <li>WebGL</li>
+                                    <li>Neo4j</li>
+                                    <li>PyTorch</li>
+                                    <li>Tensor Flow</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child is-primary notification">
+                            <p class="title">The Solution</p>
+                            <p class="subtitle">Unlocking the brains potential.</p>
+                            <div class="content">
+                                <!-- Content -->
+                                <br>
+                                <br>
+                                <strong>Platform(Connectome):</strong>
+                                <br>
+                                A visual representation of core concepts and their relationships to each other.
+                                These core concepts are broken down and form the nodes of our graph(neurons). The relationships between
+                                these concepts form the edges(synapses), and the leaner has a final conceptual map that mimics the circuitry of their own brain.
+                                <br>
+                                <br>
+                                <br>
+                                <strong>Recursive Learning:</strong>
+                                <br>
+                                With the concept connectome as the learner's map(syllabus), we walk the relationship paths as we explore a concept.
+                                As the curriculum walks these paths the adjacent relationship are subliminaly registed as associated to the current edge.
+                                The the learners visual cortex encodes the information this stimuli in a format that the brain already understands, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3363970/">Memory Traces</a><div class=""></div>
+                                With the use of <a href="https://en.wikipedia.org/wiki/Spaced_repetition">Spaced Repitition</a> the learner walks the
+                                entire concept connectome, coloring the edges as they go, and encodes the entire graph in a fraction of the time
+                                with a more robust recall.
+                            </div>
+                        </article>
+                    </div>
+                    </div>
+                    <div class="tile is-parent">
+                    <div class="container has-text-centered" id="about">
+                        <p class="title">About Us</p>
+                        <!-- <p class="subtitle">A bit about the team</p> -->
+                        <div class="content">
+                        <!-- Content -->
+                        <div class="container">
+                            <div class="columns">
+                                <div class="column is-offset-1 is-4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                          <figure class="image is-4by3">
+                                            <img src="images/linda.png" alt="Placeholder image">
+                                          </figure>
+                                        </div>
+                                        <div class="card-content">
+                                          <div class="media">
+                                            <div class="media-content">
+                                              <p class="title is-4">Ben Goebel</p>
+                                              <p class="subtitle is-6">
+                                                <a href="https://www.linkedin.com/in/jbwg312"><i class="fab fa-linkedin"></i></a>
+                                                <i class="fab fa-github"></i>
+                                                jbwg312
+                                              </p>
+                                            </div>
+                                          </div>
+                                      
+                                          <div class="content">
+                                            I am an Software Engineer with experience in developing, deploying,
+                                            and troubleshooting large scale enterprise systems. Efficient, maintainable
+                                            solutions are what I strive to provide and have delivered for embedded
+                                            set-top boxes, CPE, RF networks, and cloud infrastructure.
+                                            With time spent as the application developer, devops, and sys admin I have
+                                            a holistic view of software architecture.
+                                            
+                                            <br>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="column is-offset-2 is-4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                          <figure class="image is-4by3">
+                                            <img src="images/thom.jpeg" alt="Placeholder image">
+                                          </figure>
+                                        </div>
+                                        <div class="card-content">
+                                          <div class="media">
+                                            <div class="media-content">
+                                              <p class="title is-4">Tom Clukies</p>
+                                              <p class="subtitle is-6">
+                                                <a href="https://www.linkedin.com/in/thomas-clukies"><i class="fab fa-linkedin"></i></a>
+                                                <i class="fab fa-github"></i>
+                                                tclukies
+                                             </p>
+                                            </div>
+                                          </div>
+                                      
+                                          <div class="content">
+                                            An experienced full stack software engineer interested in writing test-driven 
+                                            clean, readable, reusable code. Always excited and motivated to quickly learn 
+                                            new technologies. I pride myself on my strong communication skills and ability 
+                                            to solve new and unfamiliar problems.
+                                            <br>
+                                          </div>
+                                        </div>
+                                      </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                <strong>Pondron LLC &copy;</strong> &nbsp;&nbsp;|&nbsp;&nbsp; Optimizing Human Understanding &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://github.com/pondron">github.com/pondron</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://medium.com/pondron">medium.com/pondron</a>
+                </p>
+            </div>
+        </footer>
+    </section>
+  </body>
 </html>
