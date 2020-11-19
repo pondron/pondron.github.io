@@ -75,6 +75,10 @@
         .burger {
             visibility: hidden;
         }
+        .sub li {
+            list-style-type: disc;
+            margin-left: 4px;
+        }
         @media screen and (max-width: 1020px) {
             .navbar-end {
                 visibility: hidden;
@@ -84,7 +88,9 @@
                 padding-left: 20rem;
                 padding-top: 1rem;
             }
-
+            .mid-pic {
+                padding-top: 2rem;
+            }
         }
         @media screen and (max-width: 768px) {
             #tech {
@@ -154,7 +160,7 @@
                                     <li><a>A collection of neurons and synapses</a></li>
                                     <li>
                                         <a>Interpreter of impulses between neural pathways</a>
-                                        <ul>
+                                        <ul class="sub">
                                         <li><a>Neurons</a></li>
                                         <li><a>Synapses</a></li>
                                         <li><a>Pathways</a></li>
@@ -181,7 +187,7 @@
                                     <br>
                                     <li>
                                         <a>Interpreter of the intra-nodal relationships</a>
-                                        <ul>
+                                        <ul class="sub">
                                         <li><a>Nodes</a></li>
                                         <li><a>Edges</a></li>
                                         <li><a>Relationships</a></li>
