@@ -40,7 +40,7 @@
             opacity: 0.5;
         }
         .top-hero {
-            margin-top: 50px;
+            margin-top: 30px;
             margin-bottom: -25px;
         }
         .graph {
@@ -70,7 +70,26 @@
             padding-top: 0px;
         }
         .mid-out {
-            padding-top: 1rem;
+            padding-top: 5rem;
+        }
+        .burger {
+            visibility: hidden;
+        }
+        @media screen and (max-width: 1020px) {
+            .navbar-end {
+                visibility: hidden;
+            }
+            .burger {
+                visibility: visible;
+                padding-left: 20rem;
+                padding-top: 1rem;
+            }
+
+        }
+        @media screen and (max-width: 768px) {
+            #tech {
+                margin-top: 2rem;
+            }
         }
     </style>
   </head>
@@ -80,21 +99,14 @@
             <div class="navbar-brand">
                 <a class="navbar-item nav-logo">
                 </a>
-            
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                </a>
-            </div>
-            
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-end">
-                    
-                    </div>
+                <div>
+                    <i class="fas fa-bars burger"></i>
                 </div>
+            </div>
+
             
-                <div class="navbar-end">
+            
+            <div class="navbar-end">
                 <a class="navbar-item top-item" href="#overview">
                     Overview
                 </a>
@@ -127,7 +139,7 @@
                 <h2 class="title is-2">leveraging the circuitry of the brain <br/>to encode information</h2>
             </div>
         </div>
-        <div class="hero is-halfheight top-hero" id="overview">
+        <div class="hero is-halfheight top-hero is-hidden-mobile" id="overview">
             <div class="hero-head">
                 <div class="container graph">
                     <div class="columns">
